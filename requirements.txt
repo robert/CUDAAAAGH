@@ -1,0 +1,6 @@
+httpx
+uvicorn
+aioconsole
+fastapi
+pydantic
+pytest
