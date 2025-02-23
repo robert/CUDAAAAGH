@@ -5,6 +5,13 @@ def main():
     # Configure the endpoint where our server is running
     set_compute_endpoint("http://localhost:8000/compute")
 
+    # SHA-256 example (warning: this will require many, many, many operations)
+    print("\n=== SHA-256 Hash ===")
+    message = "Hello!"
+    print(f"Computing SHA-256 hash of '{message}'...")
+    hash_result = sha256(message, CUDAAAAGHInt)
+    print(f"Hash result: {hash_result}")
+
     # Basic arithmetic operations
     print("\n=== Basic Arithmetic ===")
     a = CUDAAAAGHInt(10)

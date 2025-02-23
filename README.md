@@ -1,13 +1,21 @@
 # CUDAAAAGH (Centralized Underage Distributed Arithmetic - Automated Assignment And Group Hashing)
 
-CUDAAAAGH allows you to distribute arithmetic computations across a network of ~~children doing their maths homework~~ Computation Partners by replacing Python's standard integer operations with remote calls to a manual computation server. This allows you mine Bitcoin or train AI models for free. It includes:
+CUDAAAAGH allows you to distribute arithmetic computations across a network of ~~children doing their maths homework~~ Computation Partners by replacing Python's standard integer operations with remote calls to a manual computation server.
 
-- A custom integer type (`CUDAAAAGHInt`) that overrides standard arithmetic operations
+![image](./assets/demo-slower.gif)
+
+This allows you mine Bitcoin or train AI models for free.
+
+![image](./assets/cover.webp)
+
+CUDAAAAGH includes:
+
+- A custom integer type (`CUDAAAAGHInt`) that provides standard arithmetic operations
 - A manual computation server for processing arithmetic operations
 - An implementation of SHA-256 using only basic arithmetic operations
 - Support for bitwise operations decomposed into simple arithmetic
 
-See [my blog post](https://robertheaton.com/minorminer) that introduces CUDAAAAGH and my new company MinorMiner for more details.
+See [my blog post](https://robertheaton.com/minorminer) introducing CUDAAAAGH and my new company MinorMiner for more details.
 
 ## Installation
 
@@ -38,10 +46,15 @@ set_compute_endpoint("http://localhost:8000/compute")
 # Basic arithmetic
 a = CUDAAAAGHInt(10)
 b = CUDAAAAGHInt(5)
-result = a + b
-print(f"10 + 5 = {result}")  # The computation will be performed remotely by a Computation Partner/child doing their maths homework!
 
-# This will take a few thousand years or so
+# Any computation will be performed remotely by a Computation Partner/child
+# doing their maths homework!
+#
+# This will take a few seconds for a Computation Partner to solve:
+result = a + b
+print(f"10 + 5 = {result}")
+
+# This will take a few thousand years or so:
 hash_result = sha256("Hello!", CUDAAAAGHInt)
 print(f"SHA-256 hash: {hash_result}")
 ```
