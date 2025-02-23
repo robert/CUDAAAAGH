@@ -1,13 +1,13 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling==1.26.3", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "CUDAAAAGH"
-version = "0.1.2"
+version = "0.1.4"
 description = "Centralized Underage Distributed Arithmetic - Automated Assignment And Group Hashing"
 authors = [
-    { name = "Robert Heaton", email = "robqheaton@gmail.com.com" },
+    { name = "Robert Heaton", email = "robqheaton@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.8"
@@ -17,6 +17,13 @@ dependencies = [
     "uvicorn",
     "aioconsole",
     "pydantic"
+]
+# Add these required fields
+license = "MIT"  # or whatever license you're using
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
 
 [project.urls]
