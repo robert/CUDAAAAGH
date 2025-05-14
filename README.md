@@ -2,11 +2,11 @@
 
 CUDAAAAGH allows you to distribute arithmetic computations across a network of ~~children doing their maths homework~~ Computation Partners by replacing Python's standard integer operations with remote calls to a manual computation server.
 
-![image](https://raw.githubusercontent.com/robert/CUDAAAAGH/master/assets/demo-slower.gif)
+![image](./assets/demo-slower.gif)
 
-This allows you mine Bitcoin or train AI models for free.
+This allows you mine Bitcoin or train AI models for free. See [my blog post](https://robertheaton.com/minorminer) introducing CUDAAAAGH and my new company MinorMiner for more details.
 
-![image](https://raw.githubusercontent.com/robert/CUDAAAAGH/master/assets/cover.webp)
+![image](./assets/cover.webp)
 
 CUDAAAAGH includes:
 
@@ -14,8 +14,6 @@ CUDAAAAGH includes:
 - A manual computation server for processing arithmetic operations
 - An implementation of SHA-256 using only basic arithmetic operations
 - Support for bitwise operations decomposed into simple arithmetic
-
-See [my blog post](https://robertheaton.com/minorminer) introducing CUDAAAAGH and my new company MinorMiner for more details.
 
 ## Installation
 
