@@ -4,7 +4,7 @@ CUDAAAAGH allows you to distribute arithmetic computations across a network of ~
 
 ![image](./assets/demo-slower.gif)
 
-This allows you mine Bitcoin or train AI models for free. See [my blog post](https://robertheaton.com/minorminer) introducing CUDAAAAGH and my new company MinorMiner for more details.
+This allows you mine Bitcoin or train AI models for free. See [my blog post](https://robertheaton.com/minor-miner) introducing CUDAAAAGH and my new company MinorMiner for more details.
 
 ![image](./assets/cover.webp)
 
